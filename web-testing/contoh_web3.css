@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Rubik+Mono+One&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url(background_web.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+    background-color: white;
+    align-items: center;
+}
+
+.header a {
+    text-decoration: none;
+    color: teal;
+}
+
+.logo a {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.navbar a {
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.navbar a:hover {
+    color: crimson;
+}
+
+.icon{
+    display: flex;
+}
+
+.search-box {
+    outline: teal solid 2px;
+    border-radius: 20px;
+    height: 32px;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.search-box:hover .search-txt {
+    width: 200px;
+    padding: 0 1px;
+}
+
+.search-btn {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 0 4px;
+}
+
+.search-btn i {
+    color: teal;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    color: teal;
+    transition: 0.4s;
+    width: 0px;
+}
+
+.shop-box{
+    outline: teal solid 2px;
+    border-radius: 20px;
+    height: 32px;
+    padding: 0 3px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.shop-box:hover .shop-txt {
+    width: 200px;
+    padding: 0 1px;
+}
+
+.shop-btn {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 0 4px;
+}
+
+.shop-btn i {
+    color: teal;
+    margin-right: 2px;
+}
+
+.shop-txt {
+    border: none;
+    background: none;
+    outline: none;
+    color: teal;
+    transition: 0.4s;
+    width: 0px;
+}
+
+.middleleft {
+    max-width: 650px;
+    float: left;
+    margin-top: 150px;
+    margin-left: 100px;
+}
+
+.middleleft h1 {
+    font-size: 50px;
+    color: crimson;
+}
+
+.middleleft p {
+    color: black;
+}
+
+.middleright img {
+    max-width: 450px;
+    margin-right: 100px;
+    float: right;
+    align-items: center;
+    transform: rotate(30deg);
+}
