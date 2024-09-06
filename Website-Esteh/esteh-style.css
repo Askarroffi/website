@@ -276,8 +276,25 @@
     }
 
     .right-center p{
-        padding: 35px 5 10px 7px;
+        padding: 35px 5 10px 0px;
         color: black;
+    }
+
+    .right-center a{
+        padding: 10px 25px;
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+        background: brown;
+        border: 2px solid brown;
+        border-radius: 50px;
+        letter-spacing: 1px;
+        transition: .5s;
+    }
+
+    .right-center a:hover{
+        background-color: transparent;
+        color: brown;
     }
 
     /* our-product section */
@@ -308,5 +325,21 @@
         height: auto;
         display: flex;
         justify-content: center;
+    }
+
+    .box-img h2, h3, h4{
+        padding: 5px 0;
+    }
+
+    .box-img h2{
+        transition: .4s;
+    }
+
+    .box-img h2:hover{
+        background-color: brown;
+        border-radius: 50px;
+        color: white;
+        padding: 5px 20px;
+        cursor: pointer;
     }
 }
