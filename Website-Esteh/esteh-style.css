@@ -42,6 +42,7 @@
     }
 
     .header-middle :hover {
+        border: 2px solid brown;
         color: rgb(26, 156, 21);
     }
 
@@ -132,6 +133,11 @@
         justify-content: space-between;
         align-items: center;
         padding: 0px 40px;
+        background-color: white;
+        box-shadow: 0px 1px 25px black;
+        position: fixed;
+        top: 0;
+        width: 100%;
     }
 
     .header-left {
@@ -143,20 +149,28 @@
     }
 
     .header-middle {
-        padding: 5 20px;
+        padding: 5px 20px;
     }
 
     .header-middle a {
-        padding: 0 20px;
+        padding: 5px 20px;
         font-size: 15px;
         text-decoration: none;
         color: rgb(26, 156, 21);
         font-weight: 700;
-        transition: .4s;
+        transition: .3s;
+    }
+
+    .header-middle a.active{
+        background-color: rgb(26, 156, 21);
+        border-radius: 50px;
+        color: white;
     }
 
     .header-middle :hover {
-        color: brown;
+        background-color: rgb(26, 156, 21);
+        border-radius: 50px;
+        color: white;
     }
 
     .header-right a,
@@ -170,24 +184,33 @@
         border: 2px solid rgb(26, 156, 21);
         padding: 5px 5px;
         border-radius: 50px;
+        transition: .4s;
+    }
+
+    .bx:hover{
+        background-color: rgb(26, 156, 21);
+        border-radius: 50px;
+        color: white;
     }
 
     .center {
         display: flex;
         justify-content: space-between;
+        margin-top: 70px;
     }
 
     .center-left {
-        padding: 100px 50px;
+        padding: 95px 50px;
     }
 
-    h1 {
+    .center-left h1{
         font-size: 60px;
         max-width: 600px;
         color: brown;
+        line-height: 85px;
     }
 
-    h2 {
+    .center-left h2 {
         padding: 10px 0;
     }
 
@@ -215,13 +238,20 @@
         z-index: -1;
     }
 
-    .title-about h1 {
-        padding: 20px 0;
+    /* about-section */
+
+    .title-about{
+        padding: 7px 0;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 35px;
+        font-size: 20px;
         color: brown;
+    }
+
+    .title-about h1{
+        color: brown;
+        font-size: 45px;
     }
 
     .center-about {
@@ -230,11 +260,57 @@
     }
 
     .left-center {
+        margin-left: 50px;
         width: 470px;
         height: 590px;
+        z-index: -1;
     }
 
     .right-center {
-        max-width: 600px;
+        margin: 100px 50px;
+        max-width: 750px;
+    }
+
+    .right-center h2{
+        font-size: 30px;
+    }
+
+    .right-center p{
+        padding: 35px 5 10px 7px;
+        color: black;
+    }
+
+    /* our-product section */
+
+    .heading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .box-img{
+        margin-left: 50px;
+    }
+
+    .img-1{
+        width: 400px;
+        height: 400px;
+    }
+
+    .img-2{
+        width: 300px;
+        height: 300px;
+    }
+
+    .img-3{
+        width: 400px;
+        height: 400px;
+        margin-bottom: 90px;
     }
 }
