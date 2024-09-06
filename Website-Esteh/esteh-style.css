@@ -342,4 +342,13 @@
         padding: 5px 20px;
         cursor: pointer;
     }
+
+    .heading-contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 75px;
+        color: brown;
+        font-size: 45px;
+    }
 }
